@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  /* colors */
+  --cyan: rgb(42, 178, 175);
+  --cyan-lighter: rgba(42, 178, 175, 0.8);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --gray-lighter: rgba(229, 239, 245, .8);
+  --gray-blue: hsl(218, 22%, 67%);
+
+  /* font-sizes */
+  --font-size-base: 16px;
+
+  --primary-font-family: 'Karla', sans-serif;
+}
+
+body {
+  font-size: var(--font-size-base);
+  background: var(--gray);
+  padding: 4rem 0;
+  font-family: var(--primary-font-family);
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+} */
+
+.card {
+  min-width: 280px;
+  max-width: 700px;
+  width: 80%;
+  /* background: gold; */
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card section {
+  padding: 1.2rem;
+}
+
+/* description section */
+.card .description {
+}
+
+.card .description h1 {
+  color: var(--cyan);
+  font-size: 1.4rem;
+}
+
+.card .description h3 {
+  color: var(--yellow);
+}
+
+.card .description p {
+  color: var(--gray-blue);
+  line-height: 1.6;
+}
+
+/* call-to-action section */
+.card .call-to-action {
+  background: var(--cyan);
+  color: var(--gray);
+}
+
+.card .call-to-action h2 {
+  font-size: 1.4rem;
+}
+
+.card .call-to-action .subscription {
+  vertical-align: middle;
+  color: var(--gray-lighter);
+}
+
+.card .call-to-action .price {
+  font-size: 2em;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+  color: var(--gray);
+}
+
+.card .call-to-action .detail {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.card .call-to-action button {
+  background: var(--yellow);
+  width: 100%;
+  padding: .8rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, .1);
+}
+
+/* why section */
+.card .why {
+  background: var(--cyan-lighter);
+  color: var(--gray);
+}
+
+.card .why p {
+  line-height: 1.6;
+  font-size: .9em;
+  width: 75%;
+}
