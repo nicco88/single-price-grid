@@ -7,7 +7,9 @@ function ready( cb ) {
 }
 
 ready( () => {
-  const card = document.querySelector( '.card' );
-  card.classList.add( 'ready' );
+  setTimeout(() => {
+    const card = document.querySelector( '.card' );
+    card.classList.add( 'ready' );
+  }, 500)
 });
 
